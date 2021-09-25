@@ -14,8 +14,10 @@ const App = () => {
                 <Navbar />
             </div>
 
-            {/* Main Content */}
+            {/* Content */}
             <div className="main">
+
+                {/* Main Content */}
                 <Layout>
                     <div className="routes">
                         <Switch>
@@ -27,11 +29,25 @@ const App = () => {
                         </Switch>
                     </div>
                 </Layout>
-            </div>
 
-            {/* Footer */}
-            <div className="footer">
-            
+                {/* Footer */}
+                <div className="footer">
+
+                    {/* Content */}
+                    <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>Copyright © 2021&nbsp;
+                        <Link to="/">Cryptoverse Inc.</Link><br />
+                        All Rights Reserved.
+                    </Typography.Title>
+
+                    {/* Links */}
+                    <Space>
+                        <Link to="/">Home</Link>
+                        <Link to="/exchanges">Exchanges</Link>
+                        <Link to="/news">News</Link>
+                    </Space>
+
+                </div>
+
             </div>
 
         </div>
